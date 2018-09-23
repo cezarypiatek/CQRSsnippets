@@ -1,0 +1,194 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2F4BFF10197DCD42B2A4C81343B493B2/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2F4BFF10197DCD42B2A4C81343B493B2/Applicability/=File/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2F4BFF10197DCD42B2A4C81343B493B2/CustomProperties/=Extension/@EntryIndexedValue">cs</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2F4BFF10197DCD42B2A4C81343B493B2/CustomProperties/=FileName/@EntryIndexedValue">SampleQuery</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2F4BFF10197DCD42B2A4C81343B493B2/CustomProperties/=ValidateFileName/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2F4BFF10197DCD42B2A4C81343B493B2/Description/@EntryValue">New Query</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2F4BFF10197DCD42B2A4C81343B493B2/Field/=namespace/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2F4BFF10197DCD42B2A4C81343B493B2/Field/=namespace/Expression/@EntryValue">fileDefaultNamespace()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2F4BFF10197DCD42B2A4C81343B493B2/Field/=namespace/InitialRange/@EntryValue">-1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2F4BFF10197DCD42B2A4C81343B493B2/Field/=namespace/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2F4BFF10197DCD42B2A4C81343B493B2/Field/=QueryName/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2F4BFF10197DCD42B2A4C81343B493B2/Field/=QueryName/Expression/@EntryValue">getFileNameWithoutExtension()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2F4BFF10197DCD42B2A4C81343B493B2/Field/=QueryName/InitialRange/@EntryValue">-1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2F4BFF10197DCD42B2A4C81343B493B2/Field/=QueryName/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2F4BFF10197DCD42B2A4C81343B493B2/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2F4BFF10197DCD42B2A4C81343B493B2/Scope/=E8F0594528C33E45BBFEC6CFE851095D/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2F4BFF10197DCD42B2A4C81343B493B2/Scope/=E8F0594528C33E45BBFEC6CFE851095D/Type/@EntryValue">InCSharpProjectFile</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2F4BFF10197DCD42B2A4C81343B493B2/Section/=6BF29D5776704B47A2621082FEB1294A/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2F4BFF10197DCD42B2A4C81343B493B2/Section/=6BF29D5776704B47A2621082FEB1294A/LocationSelectorConfig/@EntryValue">&lt;RelativeConfig File="$NAME$Handler.cs" /&gt;</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2F4BFF10197DCD42B2A4C81343B493B2/Section/=6BF29D5776704B47A2621082FEB1294A/LocationSelectorName/@EntryValue">manual</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2F4BFF10197DCD42B2A4C81343B493B2/Section/=6BF29D5776704B47A2621082FEB1294A/Order/@EntryValue">1</s:Int64>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2F4BFF10197DCD42B2A4C81343B493B2/Section/=6BF29D5776704B47A2621082FEB1294A/SectionPlain/Text/@EntryValue">using System;&#xD;
+using CQRS.Utils;&#xD;
+using JetBrains.Annotations;&#xD;
+&#xD;
+namespace $namespace$&#xD;
+{&#xD;
+    [UsedImplicitly(ImplicitUseKindFlags.InstantiatedNoFixedConstructorSignature)]&#xD;
+    public class $QueryName$Handler: IQueryHandler&lt;$QueryName$, $QueryName$Result&gt;&#xD;
+    {&#xD;
+        public $QueryName$Result Execute($QueryName$ query)&#xD;
+        {&#xD;
+            throw new NotImplementedException("$QueryName$ has not been implemented yet");&#xD;
+        }&#xD;
+    }&#xD;
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2F4BFF10197DCD42B2A4C81343B493B2/Section/=FF93C6DC3C621F49A273BAD663278396/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2F4BFF10197DCD42B2A4C81343B493B2/Section/=FF93C6DC3C621F49A273BAD663278396/LocationSelectorConfig/@EntryValue">&lt;RelativeConfig File="$NAME$Result.cs" /&gt;</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2F4BFF10197DCD42B2A4C81343B493B2/Section/=FF93C6DC3C621F49A273BAD663278396/LocationSelectorName/@EntryValue">manual</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2F4BFF10197DCD42B2A4C81343B493B2/Section/=FF93C6DC3C621F49A273BAD663278396/Order/@EntryValue">0</s:Int64>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2F4BFF10197DCD42B2A4C81343B493B2/Section/=FF93C6DC3C621F49A273BAD663278396/SectionPlain/Text/@EntryValue">namespace $namespace$&#xD;
+{&#xD;
+    public class $QueryName$Result&#xD;
+    {&#xD;
+        &#xD;
+    }&#xD;
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2F4BFF10197DCD42B2A4C81343B493B2/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2F4BFF10197DCD42B2A4C81343B493B2/Text/@EntryValue">using CQRS.Utils;&#xD;
+&#xD;
+namespace $namespace$&#xD;
+{&#xD;
+    public class $QueryName$: IQuery&#xD;
+    {&#xD;
+        public void Validate()&#xD;
+        {&#xD;
+        }&#xD;
+    }&#xD;
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38E520BB81713C4FA5EA252FCF8DE8A6/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38E520BB81713C4FA5EA252FCF8DE8A6/Applicability/=File/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38E520BB81713C4FA5EA252FCF8DE8A6/CustomProperties/=Extension/@EntryIndexedValue">cs</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38E520BB81713C4FA5EA252FCF8DE8A6/CustomProperties/=FileName/@EntryIndexedValue">SampleCommand</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38E520BB81713C4FA5EA252FCF8DE8A6/CustomProperties/=ValidateFileName/@EntryIndexedValue">True</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38E520BB81713C4FA5EA252FCF8DE8A6/Description/@EntryValue">New Command</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38E520BB81713C4FA5EA252FCF8DE8A6/Field/=CommandName/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38E520BB81713C4FA5EA252FCF8DE8A6/Field/=CommandName/Expression/@EntryValue">getFileNameWithoutExtension()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38E520BB81713C4FA5EA252FCF8DE8A6/Field/=CommandName/InitialRange/@EntryValue">-1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38E520BB81713C4FA5EA252FCF8DE8A6/Field/=CommandName/Order/@EntryValue">1</s:Int64>
+	
+	
+	
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38E520BB81713C4FA5EA252FCF8DE8A6/Field/=namespace/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38E520BB81713C4FA5EA252FCF8DE8A6/Field/=namespace/Expression/@EntryValue">fileDefaultNamespace()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38E520BB81713C4FA5EA252FCF8DE8A6/Field/=namespace/InitialRange/@EntryValue">-1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38E520BB81713C4FA5EA252FCF8DE8A6/Field/=namespace/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38E520BB81713C4FA5EA252FCF8DE8A6/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38E520BB81713C4FA5EA252FCF8DE8A6/Scope/=E8F0594528C33E45BBFEC6CFE851095D/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38E520BB81713C4FA5EA252FCF8DE8A6/Scope/=E8F0594528C33E45BBFEC6CFE851095D/Type/@EntryValue">InCSharpProjectFile</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38E520BB81713C4FA5EA252FCF8DE8A6/Section/=3EECF5CA28B16B47809E251C1EFB36B7/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38E520BB81713C4FA5EA252FCF8DE8A6/Section/=3EECF5CA28B16B47809E251C1EFB36B7/LocationSelectorConfig/@EntryValue">&lt;RelativeConfig File="$NAME$Handler.cs" /&gt;</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38E520BB81713C4FA5EA252FCF8DE8A6/Section/=3EECF5CA28B16B47809E251C1EFB36B7/LocationSelectorName/@EntryValue">manual</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38E520BB81713C4FA5EA252FCF8DE8A6/Section/=3EECF5CA28B16B47809E251C1EFB36B7/Order/@EntryValue">0</s:Int64>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38E520BB81713C4FA5EA252FCF8DE8A6/Section/=3EECF5CA28B16B47809E251C1EFB36B7/SectionPlain/Text/@EntryValue">using System;&#xD;
+using CQRS.Utils;&#xD;
+using JetBrains.Annotations;&#xD;
+&#xD;
+namespace $namespace$&#xD;
+{&#xD;
+    [UsedImplicitly(ImplicitUseKindFlags.InstantiatedNoFixedConstructorSignature)]&#xD;
+    public class $CommandName$Handler: ICommandHandler&lt;$CommandName$&gt;&#xD;
+    {&#xD;
+        public void Execute($CommandName$ command)&#xD;
+        {&#xD;
+            throw new NotImplementedException("$CommandName$ has not been implemented yet");&#xD;
+        }&#xD;
+    }&#xD;
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38E520BB81713C4FA5EA252FCF8DE8A6/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38E520BB81713C4FA5EA252FCF8DE8A6/Text/@EntryValue">using CQRS.Utils;&#xD;
+&#xD;
+namespace $namespace$&#xD;
+{&#xD;
+    public class $CommandName$: ICommand&#xD;
+    {&#xD;
+        public void Validate()&#xD;
+        {&#xD;
+        }&#xD;
+    }&#xD;
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5053F17F1699834DAAC0D58582E32A7D/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5053F17F1699834DAAC0D58582E32A7D/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5053F17F1699834DAAC0D58582E32A7D/Description/@EntryValue">Query action</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5053F17F1699834DAAC0D58582E32A7D/Field/=QueryName/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5053F17F1699834DAAC0D58582E32A7D/Field/=QueryName/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5053F17F1699834DAAC0D58582E32A7D/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5053F17F1699834DAAC0D58582E32A7D/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5053F17F1699834DAAC0D58582E32A7D/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5053F17F1699834DAAC0D58582E32A7D/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5053F17F1699834DAAC0D58582E32A7D/Shortcut/@EntryValue">qa</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5053F17F1699834DAAC0D58582E32A7D/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=5053F17F1699834DAAC0D58582E32A7D/Text/@EntryValue">[HttpGet(nameof($QueryName$))]&#xD;
+public $QueryName$QueryResult GetActiveUser($QueryName$Query query)&#xD;
+{&#xD;
+    return this.queryDispatcher.Dispatch&lt;$QueryName$Query, $QueryName$QueryResult&gt;(query);&#xD;
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=83CE66B64616CA4BA596044B66EF5F0C/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=83CE66B64616CA4BA596044B66EF5F0C/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=83CE66B64616CA4BA596044B66EF5F0C/Description/@EntryValue">Command action</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=83CE66B64616CA4BA596044B66EF5F0C/Field/=CommandName/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=83CE66B64616CA4BA596044B66EF5F0C/Field/=CommandName/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=83CE66B64616CA4BA596044B66EF5F0C/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=83CE66B64616CA4BA596044B66EF5F0C/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=83CE66B64616CA4BA596044B66EF5F0C/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=83CE66B64616CA4BA596044B66EF5F0C/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=83CE66B64616CA4BA596044B66EF5F0C/Shortcut/@EntryValue">ca</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=83CE66B64616CA4BA596044B66EF5F0C/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=83CE66B64616CA4BA596044B66EF5F0C/Text/@EntryValue">[HttpPost(nameof($CommandName$))]&#xD;
+public void $CommandName$([FromBody]$CommandName$Command command)&#xD;
+{&#xD;
+    this.commandDispatcher.Dispatch(command);&#xD;
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BDE9234CF236D24F9D470ACA0B59B338/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BDE9234CF236D24F9D470ACA0B59B338/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BDE9234CF236D24F9D470ACA0B59B338/Description/@EntryValue">Command test</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BDE9234CF236D24F9D470ACA0B59B338/Field/=commandName/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BDE9234CF236D24F9D470ACA0B59B338/Field/=commandName/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BDE9234CF236D24F9D470ACA0B59B338/Field/=testName/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BDE9234CF236D24F9D470ACA0B59B338/Field/=testName/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BDE9234CF236D24F9D470ACA0B59B338/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BDE9234CF236D24F9D470ACA0B59B338/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BDE9234CF236D24F9D470ACA0B59B338/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BDE9234CF236D24F9D470ACA0B59B338/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BDE9234CF236D24F9D470ACA0B59B338/Shortcut/@EntryValue">ct</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BDE9234CF236D24F9D470ACA0B59B338/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BDE9234CF236D24F9D470ACA0B59B338/Text/@EntryValue">[Test]&#xD;
+public void $testName$()&#xD;
+{&#xD;
+    //ARRANGE&#xD;
+    var command = new $commandName$Command();&#xD;
+&#xD;
+    //ACT&#xD;
+    CQRSTestHelper.Execute(command);&#xD;
+&#xD;
+    //ASSERT&#xD;
+    $END$&#xD;
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CD6F40A601674749B246F455D5E0C91C/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CD6F40A601674749B246F455D5E0C91C/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CD6F40A601674749B246F455D5E0C91C/Description/@EntryValue">Query test</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CD6F40A601674749B246F455D5E0C91C/Field/=queryName/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CD6F40A601674749B246F455D5E0C91C/Field/=queryName/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CD6F40A601674749B246F455D5E0C91C/Field/=testName/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CD6F40A601674749B246F455D5E0C91C/Field/=testName/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CD6F40A601674749B246F455D5E0C91C/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CD6F40A601674749B246F455D5E0C91C/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CD6F40A601674749B246F455D5E0C91C/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CD6F40A601674749B246F455D5E0C91C/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CD6F40A601674749B246F455D5E0C91C/Shortcut/@EntryValue">qt</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CD6F40A601674749B246F455D5E0C91C/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CD6F40A601674749B246F455D5E0C91C/Text/@EntryValue">[Test]&#xD;
+public void $testName$()&#xD;
+{&#xD;
+    //ARRANGE&#xD;
+    var query = new $queryName$Query();&#xD;
+&#xD;
+    //ACT&#xD;
+    var result = CQRSTestHelper.Execute&lt;$queryName$Query, $queryName$QueryResult&gt;(query);&#xD;
+&#xD;
+    //ASSERT&#xD;
+    Assert.NotNull(result);&#xD;
+    $END$&#xD;
+}</s:String></wpf:ResourceDictionary>
